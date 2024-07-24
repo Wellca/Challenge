@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/logo.ico" type="image/x-icon">
+</head>
+<body>
+    <script src="app.js"></script>
+    
+    <section class="main_container">
+        <h1 class="main__container__logo">
+            <img src="assets/logo.png" alt="logo da Alura">
+        </h1>
+
+        <div class="main__container__input">
+            <textarea class="main__container__entrada" name="texto__para__criptografar" id="texto__para__criptografar" placeholder="Digite seu texto"></textarea>
+        
+            <div class="alinhamento_texto_icone">
+                <img src="assets/icon.png" alt="exclamacao">
+                <p>Apenas letras minúsculas e sem acento.</p>
+            </div>
+
+            <div class="buttons">
+                <button onclick="criptografartexto()" class="button_criptografar">Criptografar</button>
+                <button onclick="descriptografar()" class="button_descriptografar">Descriptografar</button>
+            </div>
+            
+        </div>
+
+        <div id="output_texto" class="main__container__output">
+            <img src="assets/searching.png" alt="imagem aguardando texto">
+            <h2>Nenhuma mensagem encontrada</h2>
+            <span>Digite um texto que você deseja criptografar ou descriptografar.</span>
+        </div>
+    </section>
+    
+</body>
+<footer class="rodape">
+    <p> Elaborado por Wellington Andrade do Carmo - 2024</p>
+</footer>
+</html>
